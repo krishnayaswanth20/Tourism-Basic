@@ -1,0 +1,124 @@
+<link rel="stylesheet" href="Final.css">
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+    <body>
+        <div id="sectionHome">
+            <div class ="bg-Image d-flex flex-column justify-content-center">
+                <div class="tourism-card ">
+                    <h1 class="heading">Tourism</h1>
+                    <p class="paragraph"> Plan Your Trip Wherever You GO</p>
+                    <button class="btn btn-primary" onclick="display('sectionFavouritePlace')">Get Started</button>
+                </div>
+            </div>
+        </div>
+        <div id="sectionFavouritePlace">
+            <div class ="Favplace-bg-container">
+                <h1 class="favplace-heading">Favourite Place</h1> 
+                <div class="favourite-place-card-container d-flex  flex-row" onclick="display('sectionTajmahalDetailedView')">
+                    <div>
+                        <h1 class="favourite-place-card-Heading">TAJ MAHAL</h1>
+                        <P class="favourite-place-card-description"> If there was just one symbol to represent all of India, it would be the Taj Mahal</P>
+                    </div>
+                    <img src="https://whc.unesco.org/uploads/thumbs/site_0252_0008-750-750-20151104113424.jpg" class="favourite-place-card-image"/>
+                </div>
+                <div class="favourite-place-card-container d-flex flex-row">
+                    <div>
+                      <h1 class="favourite-place-card-heading">Golden Temple</h1>
+                      <p class="favourite-place-card-description">
+                        Amritsar is world-famous for the beautiful and highly revered Golden
+                        Temple
+                      </p>
+                    </div>
+                    <img
+                      src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/golden-temple-img.png"
+                      class="favourite-place-card-image"/>
+                </div>
+            
+                <div class="favourite-place-card-container d-flex flex-row">
+                    <div>
+                      <h1 class="favourite-place-card-heading">Mysore Palace</h1>
+                      <p class="favourite-place-card-description">
+                        The Mysore Palace is a historical palace and the royal residence at
+                        Mysore .
+                      </p>
+                    </div>
+                    <img
+                      src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace-img.png"
+                      class="favourite-place-card-image"/>
+                </div>
+            
+                <div class="favourite-place-card-container d-flex flex-row">
+                    <div>
+                        <h1 class="favourite-place-card-heading">Varanasi Temple</h1>
+                        <p class="favourite-place-card-description">
+                            Varanasi Temple is most famous Hindu temples dedicated to Lord Shiva</p>
+                </div>
+                    <img
+                      src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/varanasi-temple-img.png"
+                      class="favourite-place-card-image"/></div>
+                    <button class="btn btn-dark" onclick="display('sectionHome')">Back</button>
+                </div> 
+             </div>
+             
+        <div id="sectionTajmahalDetailedView">
+            <div class="detailed-view-bg-container">
+                <h1 class="detailed-view-heading">Detailed View </h1>
+                <div class="detailed-view-card">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://miro.medium.com/v2/resize:fit:1400/1*VhDpUbuZQC4tLoP9qQ6W5A.jpeg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://idsb.tmgrup.com.tr/ly/uploads/images/2021/10/07/150376.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://www.tajmahalinagra.com/wp-content/uploads/2020/10/Taj-Mahal-Night-View-1.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </button>
+                    </div>
+                    <div class="detailed-view-card-text-container">
+                        <h1 class="detailed-view-card-heading">TAJ MAHAL</h1>
+                        <p class="deatiled-view-card-description">The Taj Mahal is one of the most iconic and beautiful monuments in the world. Located in Agra, India, it is a UNESCO World Heritage Site and attracts millions of visitors each year.
+                            History and Background
+                            The Taj Mahal was commissioned by the Mughal Emperor Shah Jahan in 1632 as a mausoleum for his beloved wife Mumtaz Mahal, who died during childbirth. Construction began in 1632 and was completed in 1653, employing thousands of artisans and craftsmen. The Taj Mahal is a symbol of Shah Jahan's love for Mumtaz Mahal, and it is often referred to as the "Crown of Palaces."
+                            Architecture
+                            The Taj Mahal is renowned for its stunning architecture, which is a blend of Islamic, Persian, Ottoman Turkish, and Indian architectural styles. The main structure is made of white marble and stands on a square plinth with a large central dome, surrounded by four smaller domes and four slender minarets at each corner. The marble is inlaid with precious and semi-precious stones, creating intricate floral patterns and calligraphy.
+                            The complex also includes a large garden, reflecting pools, a mosque, and a guest house. The garden is laid out in the Persian-style Charbagh layout, divided into four parts by walkways and water channels.
+                    
+                            Symbolism and Significance
+                            The Taj Mahal is more than just a beautiful building; it is a symbol of eternal love and devotion. Its symmetry, grandeur, and the ethereal beauty of the white marble at different times of the day create a serene and almost otherworldly atmosphere.
+                            
+                            The Taj Mahal has also been interpreted as a symbol of paradise, with its garden representing the concept of heaven in Islamic tradition. The reflections in the pools add to the monument's mystical quality.
+                            
+                            Preservation and Tourism
+                            The Taj Mahal has faced challenges over the years, including pollution, environmental damage, and the impact of millions of visitors. Efforts have been made to preserve and protect the site, including limiting the number of visitors and using eco-friendly transportation to reduce pollution.
+                            
+                            Despite these challenges, the Taj Mahal remains one of the most visited and admired landmarks in the world. It is not only a masterpiece of Mughal architecture but also a poignant reminder of the human capacity for love and creativity.</p>
+                    </div>  
+                </div>
+                <button class="btn btn-dark" onclick="display('sectionFavouritePlace')">Back</button>
+            </div>
+        </div>
+        <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    </body>
+</html>    
